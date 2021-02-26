@@ -2,14 +2,30 @@ import QtQuick 2.12
 import QtQuick.Controls 2.5
 import QtQuick.VirtualKeyboard 2.4
 import QtQuick.Window 2.2
+import com.company.localdevice 1.0
 
 
 ApplicationWindow {
-    id: window
+    id: app
     width: screen.width
     height: screen.height
     visible: true
     title: qsTr("Coffee Place V1.0")
+
+    function reboot()
+    {
+        LocalDevice.reboot()
+    }
+
+    function powerOff()
+    {
+        LocalDevice.powerOff()
+    }
+
+    function terminal()
+    {
+        LocalDevice.terminal()
+    }
 
     header: ToolBar {
         contentHeight: toolButton.implicitHeight
@@ -35,8 +51,8 @@ ApplicationWindow {
 
     Drawer {
         id: drawer
-        width: window.width * 0.55
-        height: window.height
+        width: app.width * 0.55
+        height: app.height
 
         Column {
             anchors.fill: parent
@@ -81,8 +97,8 @@ ApplicationWindow {
         id: inputPanel
         z: 99
         x: 0
-        y: window.height
-        width: window.width
+        y: app.height
+        width: app.width
 
         states: State {
             name: "visible"
