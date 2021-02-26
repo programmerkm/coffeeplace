@@ -1,0 +1,20 @@
+<RCC>
+    <qresource prefix="/">
+        <file>main.qml</file>
+        <file>HomeForm.qml</file>
+        <file>Device.qml</file>
+        <file>qtquickcontrols2.conf</file>
+        <file>qmldir</file>
+        <file>AppTheme.qml</file>
+        <file>GoogleDashboard.qml</file>
+        <file>YouTube.qml</file>
+        <file>Trailers.qml</file>
+        <file>images/home.svg</file>
+        <file>images/imdb.svg</file>
+        <file>images/youtube.svg</file>
+        <file>images/ui-power.svg</file>
+        <file>images/terminal.svg</file>
+        <file>images/reboot.svg</file>
+        <file>images/gears.svg</file>
+    </qresource>
+</RCC>
