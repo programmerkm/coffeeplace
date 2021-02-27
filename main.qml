@@ -34,6 +34,7 @@ ApplicationWindow {
             id: toolButton
             text: stackView.depth > 1 ? "\u25C0" : "\u2630"
             font.pixelSize: Qt.application.font.pixelSize * 1.6
+            icon.source: "/images/raspberry-pi.svg"
             onClicked: {
                 if (stackView.depth > 1) {
                     stackView.pop()
@@ -61,6 +62,7 @@ ApplicationWindow {
                 text: qsTr("YouTube")
                 font.pixelSize:AppTheme.menuTextSize
                 width: parent.width
+                icon.source: "/images/youtube.svg"
                 onClicked: {
                     stackView.push("YouTube.qml")
                     drawer.close()
@@ -70,8 +72,19 @@ ApplicationWindow {
                 text: qsTr("Movie Trailers")
                 font.pixelSize: AppTheme.menuTextSize
                 width: parent.width
+                icon.source: "/images/clapperboard.svg"
                 onClicked: {
                     stackView.push("Trailers.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
+                text: qsTr("World Radio")
+                font.pixelSize: AppTheme.menuTextSize
+                width: parent.width
+                icon.source: "/images/radio.svg"
+                onClicked: {
+                    stackView.push("Radio.qml")
                     drawer.close()
                 }
             }
@@ -79,6 +92,7 @@ ApplicationWindow {
                 text: qsTr("Device Management")
                 font.pixelSize: AppTheme.menuTextSize
                 width: parent.width
+                icon.source: "/images/raspberry-pi.svg"
                 onClicked: {
                     stackView.push("Device.qml")
                     drawer.close()

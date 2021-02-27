@@ -60,10 +60,10 @@ QtObject
     readonly property real appToolBarHeight: vscale(120)
     readonly property real dividerSize: 1
 
-    readonly property int  iconButtonTextSize: tscale(32)
+    readonly property int  iconButtonTextSize: tscale(20)
     readonly property real iconButtonHeight : vscale(32)
     readonly property real iconButtonWidth : hscale(32)
     readonly property real iconToolbarHeight : iconButtonHeight + 2
-    readonly property real menuTextSize:tscale(42)
+    readonly property real menuTextSize:tscale(20)
 
 }

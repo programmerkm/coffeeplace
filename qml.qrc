@@ -16,5 +16,9 @@
         <file>images/terminal.svg</file>
         <file>images/reboot.svg</file>
         <file>images/gears.svg</file>
+        <file>images/clapperboard.svg</file>
+        <file>images/raspberry-pi.svg</file>
+        <file>images/radio.svg</file>
+        <file>Radio.qml</file>
     </qresource>
 </RCC>
