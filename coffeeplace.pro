@@ -1,4 +1,4 @@
-QT += quick quickcontrols2 virtualkeyboard webengine
+QT += quick quickcontrols2 virtualkeyboard webengine network
 
 CONFIG += c++11
 

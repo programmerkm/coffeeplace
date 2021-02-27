@@ -15,6 +15,7 @@ public:
             qDebug() << "Called the C++ method with" << msg;
             return true;
         }
+    bool isConnectedToNetwork();
 
 public Q_SLOTS:
     void reboot();
