@@ -12,5 +12,9 @@ Page {
     WebEngineView {
         url: "https://www.imdb.com/trailers/"
         anchors.fill: parent
+
+        onContextMenuRequested: {
+             request.accepted = true;
+         }
     }
 }

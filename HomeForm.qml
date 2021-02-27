@@ -1,6 +1,6 @@
 import QtQuick 2.12
 import QtQuick.Controls 2.5
-import QtWebEngine 1.1
+import QtWebEngine 1.8
 import QtQuick.Window 2.2
 
 Page {
@@ -11,5 +11,9 @@ Page {
     WebEngineView {
         url: "https://dakboard.com/app?p=1a90cc0599c6a92cd8635b54142f031f"
         anchors.fill: parent
+
+        onContextMenuRequested: {
+             request.accepted = true;
+         }
     }
 }

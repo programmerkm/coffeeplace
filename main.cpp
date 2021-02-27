@@ -1,6 +1,7 @@
 #include <QGuiApplication>
 #include <QQmlApplicationEngine>
 #include <qtwebengineglobal.h>
+#include <QThread>
 #include "qlocaldevice.h"
 
 int main(int argc, char *argv[])

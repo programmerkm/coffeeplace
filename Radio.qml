@@ -12,5 +12,9 @@ Page {
     WebEngineView {
         url: "https://www.radio.net"
         anchors.fill: parent
+
+        onContextMenuRequested: {
+             request.accepted = true;
+         }
     }
 }
