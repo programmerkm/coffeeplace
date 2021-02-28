@@ -23,5 +23,8 @@
         <file>images/menu.svg</file>
         <file>images/back.svg</file>
         <file>images/configuration.svg</file>
+        <file>Slack.qml</file>
+        <file>images/slack.svg</file>
+        <file>About.qml</file>
     </qresource>
 </RCC>

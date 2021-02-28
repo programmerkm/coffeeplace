@@ -63,6 +63,16 @@ ApplicationWindow {
             anchors.fill: parent
 
             ItemDelegate {
+                text: qsTr("Slack")
+                font.pixelSize:AppTheme.menuTextSize
+                width: parent.width
+                icon.source: "/images/slack.svg"
+                onClicked: {
+                    stackView.push("Slack.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
                 text: qsTr("YouTube")
                 font.pixelSize:AppTheme.menuTextSize
                 width: parent.width
@@ -99,6 +109,16 @@ ApplicationWindow {
                 icon.source: "/images/configuration.svg"
                 onClicked: {
                     stackView.push("Device.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
+                text: qsTr("About CoffeePlace")
+                font.pixelSize: AppTheme.menuTextSize
+                width: parent.width
+                icon.source: "/images/configuration.svg"
+                onClicked: {
+                    stackView.push("About.qml")
                     drawer.close()
                 }
             }
