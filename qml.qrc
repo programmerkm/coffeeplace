@@ -20,5 +20,8 @@
         <file>images/raspberry-pi.svg</file>
         <file>images/radio.svg</file>
         <file>Radio.qml</file>
+        <file>images/menu.svg</file>
+        <file>images/back.svg</file>
+        <file>images/configuration.svg</file>
     </qresource>
 </RCC>

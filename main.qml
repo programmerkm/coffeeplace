@@ -28,13 +28,16 @@ ApplicationWindow {
     }
 
     header: ToolBar {
-        contentHeight: toolButton.implicitHeight
+        contentHeight: AppTheme.iconButtonHeight
 
         ToolButton {
             id: toolButton
-            text: stackView.depth > 1 ? "\u25C0" : "\u2630"
-            font.pixelSize: Qt.application.font.pixelSize * 1.6
-            icon.source: "/images/raspberry-pi.svg"
+            width: AppTheme.iconButtonWidth
+            height:AppTheme.iconButtonHeight
+            icon.source: stackView.depth > 1 ? "/images/back.svg" : "/images/raspberry-pi.svg"
+            icon.width: AppTheme.iconButtonWidth
+            icon.height: AppTheme.iconButtonHeight
+
             onClicked: {
                 if (stackView.depth > 1) {
                     stackView.pop()
@@ -47,6 +50,7 @@ ApplicationWindow {
         Label {
             text: stackView.currentItem.title
             anchors.centerIn: parent
+            font.pixelSize: AppTheme.menuTextSize
         }
     }
 
@@ -92,7 +96,7 @@ ApplicationWindow {
                 text: qsTr("Device Management")
                 font.pixelSize: AppTheme.menuTextSize
                 width: parent.width
-                icon.source: "/images/raspberry-pi.svg"
+                icon.source: "/images/configuration.svg"
                 onClicked: {
                     stackView.push("Device.qml")
                     drawer.close()

@@ -17,8 +17,9 @@ Page {
              request.accepted = true;
          }
 
+        property bool firstLoadComplete: false
         onLoadingChanged: function(loadRequest) {
-            if (loadRequest.status === WebEngineView.LoadSucceededStatus) {
+            if (loadRequest.status === WebEngineView.LoadSucceededStatus && !firstLoadComplete) {
                 busy.running = true
                 showTimer.start()
             }
@@ -26,10 +27,11 @@ Page {
 
         Timer {
             id: showTimer
-            interval: 500
+            interval: 60000
             repeat: false
             onTriggered: {
                 homepagewebengine.show(true)
+                homepagewebengine.firstLoadComplete = true
             }
         }
 
@@ -38,6 +40,12 @@ Page {
             anchors.fill: parent
             z: 1
             color: "white"
+            Label{
+                text: "Welcome to CoffeePlace, please wait..."
+                anchors.centerIn: parent
+                font.pixelSize: AppTheme.menuTextSize
+                color: "black"
+            }
 
             BusyIndicator {
                 id: busy
