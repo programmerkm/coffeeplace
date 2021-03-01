@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - Pomodoro Clock</title>
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.css'>
+<link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'><link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="pomodoro">
+  <div class="row">
+    <div class="col-md-6">
+      <div class="row"><p>session length<p></div>
+      <div class="row counter">
+        <div class="col-md-4">
+          <button class="btn btn-default" id="sessDec">-</button>        
+        </div>
+        <div class="col-md-2">
+          <div id="session"></div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-default" id="sessInc">+</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-md-6">
+      <div class="row"><p>break length<p></div>
+      <div class="row counter">
+        <div class="col-md-4">
+          <button class="btn btn-default" id="breakDec">-</button>
+        </div>
+        <div class="col-md-2">
+          <div id="break"></div>
+        </div>
+        <div class="col-md-4">
+          <button class="btn btn-default" id="breakInc">+</button>        
+        </div>
+      </div>
+    </div>
+  </div>
+    
+  <div id="clock" class="row">
+    <div class="timer"><div class="middle"></div></div>
+  </div>
+  <div class="row" id="statRow">
+    <div id="stats"></div>
+  </div>
+  <div class="container">
+    <div class="row" id="btns">
+      <button class="btn btn-default btn-lg" id="start">start</button>
+      <button class="btn btn-default btn-lg" id="stop">stop</button>
+      <button class="btn btn-default btn-lg" id="clear">clear</button>
+    </div>
+  </div>
+     
+</div>
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js'></script>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/flipclock/0.7.8/flipclock.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>

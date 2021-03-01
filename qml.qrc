@@ -26,5 +26,11 @@
         <file>Slack.qml</file>
         <file>images/slack.svg</file>
         <file>About.qml</file>
+        <file>images/profile.svg</file>
+        <file>images/timer.svg</file>
+        <file>pomodoro-clock/dist/desk-white-black-header.jpg</file>
+        <file>pomodoro-clock/dist/script.js</file>
+        <file>pomodoro-clock/dist/style.css</file>
+        <file>pomodoro-clock/dist/index.html</file>
     </qresource>
 </RCC>

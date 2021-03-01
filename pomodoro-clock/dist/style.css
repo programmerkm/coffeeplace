@@ -1,0 +1,89 @@
+body {
+  background: url("https://static.pexels.com/photos/6663/desk-white-black-header.jpg") no-repeat center center fixed;
+  background-size: cover;
+}
+
+.pomodoro {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 480px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+p {
+  text-align: center;
+}
+
+.flip-clock-wrapper {
+  max-width: 460px;
+  margin: 3em auto 2em;
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-4 {
+  display: flex;
+  justify-content: center;
+}
+
+.col-md-2 {
+  display: flex;
+  justify-content: center;
+  height: 34px;
+  align-items: center;
+}
+
+.counter {
+  display: flex;
+  justify-content: center;
+}
+
+.clock {
+  margin-top: 30px;
+}
+
+.container {
+  width: 480px;
+}
+
+.middle {
+  display: inline-block;
+}
+
+#btns {
+  display: flex;
+  justify-content: center;
+}
+
+#stop {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.btn {
+  background-color: #333333;
+  color: #CCCCCC;
+}
+
+#sessInc, #sessDec, #breakInc, #breakDec {
+  font-weight: bold;
+}
+
+#stats {
+  background-color: #333333;
+  width: 220px;
+  height: 70px;
+  border-radius: 10px;
+  color: #CCCCCC;
+  font-size: 45px;
+  text-align: center;
+}
+
+#statRow {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 10px;
+}

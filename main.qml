@@ -116,7 +116,7 @@ ApplicationWindow {
                 text: qsTr("About CoffeePlace")
                 font.pixelSize: AppTheme.menuTextSize
                 width: parent.width
-                icon.source: "/images/configuration.svg"
+                icon.source: "/images/profile.svg"
                 onClicked: {
                     stackView.push("About.qml")
                     drawer.close()
