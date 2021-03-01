@@ -28,7 +28,7 @@ Page {
 
         Timer {
             id: showTimer
-            interval: 60000
+            interval: 10000
             repeat: false
             onTriggered: {
                 homepagewebengine.show(true)
