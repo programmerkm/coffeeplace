@@ -32,5 +32,6 @@
         <file>pomodoro-clock/dist/script.js</file>
         <file>pomodoro-clock/dist/style.css</file>
         <file>pomodoro-clock/dist/index.html</file>
+        <file>Timer.qml</file>
     </qresource>
 </RCC>

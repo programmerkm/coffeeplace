@@ -73,6 +73,16 @@ ApplicationWindow {
                 }
             }
             ItemDelegate {
+                text: qsTr("Pomodoro Timer")
+                font.pixelSize:AppTheme.menuTextSize
+                width: parent.width
+                icon.source: "/images/timer.svg"
+                onClicked: {
+                    stackView.push("Timer.qml")
+                    drawer.close()
+                }
+            }
+            ItemDelegate {
                 text: qsTr("YouTube")
                 font.pixelSize:AppTheme.menuTextSize
                 width: parent.width
